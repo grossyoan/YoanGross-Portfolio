@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#logoGame {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#logoGame img {
+  height: 130px;
+}
+
+#game {
+  margin: 0 auto;
+  width: 960px;
+  height: 500px;
+}
+
+#gameSelection {
+  position: relative;
+  display: flex;
+  height: 500px;
+}
+
+.gameSelectionText {
+  font-size: 4em;
+}
+
+#menuColor1 {
+  cursor: pointer;
+  color: #fdcb6e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #0984e3;
+  width: 50%;
+  height: 100%;
+  transition: width 1s ease;
+}
+
+#menuColor1:hover {
+  width: 100%;
+}
+
+#menuColor2 {
+  color:#0984e3;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fdcb6e;
+  width: 50%;
+  height: 100%;
+  transition: width 1s ease;
+}
+
+#menuColor2:hover {
+  width: 100%;
+}
+
+#arcade {
+  background: #0984e3;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+}
+
+#myProgress {
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  background-color: #ff7675;
+  visibility: hidden;
+}
+
+#myProgress:active {
+  transform: translateY(3px);
+}
+
+#myBar {
+  position: absolute;
+  top: 0px;
+  width: 1%;
+  height: 100%;
+  background-color: #55efc4;
+}
+
+#myProgress span {
+  color: white;
+  position: absolute;
+  right: 43%;
+  font-size: 2em;
+}
+
+#result {
+  position: fixed;
+  top: 390px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 503px;
+  width: 960px;
+  background: #0984e3;
+  display: none;
+}
+
+#result div:first-child {
+  padding-top: 100px;
+  margin: 0 auto;
+  font-family: 'Jua', sans-serif;
+}
+
+#result div {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+}
+
+#resultImages img {
+  cursor: pointer;
+}
+
+#retryButton {
+  height: 64px;
+}
+
+#homeButton {
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+#nextButton {
+  height: 64px;
+}
+
+#Go {
+  cursor: pointer;
+  position: fixed;
+  top: 390px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 503px;
+  width: 960px;
+  background: #0984e3;
+  display: none;
+  opacity: 0.9;
+  text-align: center;
+}
+
+#Go span {
+  color: white;
+  font-size: 5em;
+  font-weight: bold;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#settingsButton {
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+  right: 5px;
+  top: 5px;
+}
+
+#settingsImg {
+  height: 50px;
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+#settingsImg img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+#settingsImg img:active {
+  transform: scale(1, 1);
+}
+
+#brushSize {
+  text-align: center;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+  top: 70px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+}
+
+#brushSize img {
+  margin: 0 auto 3px auto;
+}
+
+#brushSize img:hover {
+  transform: scale(1.5, 1.5);
+}
+
+#brushSize img:active {
+  transform: scale(1, 1);
+}
+
+#Brush05 {
+  padding-left: 1px;
+  height: 15px;
+  width: 15px;
+}
+
+#Brush04 {
+  height: 20px;
+  width: 20px;
+}
+
+#Brush03 {
+  height: 25px;
+  width: 25px;
+}
+
+#Brush02 {
+  height: 30px;
+  width: 30px;
+}
+
+#Brush01 {
+  height: 35px;
+  width: 35px;
+}
+
+#scoreBoard {
+  position: fixed;
+  top: 390px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 960px;
+  background: #0984e3;
+  display: none;
+  text-align: center;
+}
+
+#cupButton {
+  cursor: pointer;
+}
+
+#homeButtonScoreboard {
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 47.3%;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#socialMedias {
+  padding-top: 10px;
+}
+
+#socialMedias img {
+  height: 60px;
+}
+
+#companyLogo {
+  width: 190px;
+}
+
+#socialMedias {
+  cursor: pointer;
+}
+
+#cupButton {
+  position: absolute;
+  height: 60px;
+  left: 5px;
+}
+
+#scoreBoard ul {
+  margin-top: 10px;
+}
+
+#scoreBoard li {
+  color: white;
+  font-size: 1.5em;
+  list-style: none;
+  text-align: left;
+}
+
+#scoreBoard h2 {
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Jua', sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+  #logoGame img {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  #gameSelection {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+  }
+  #game {
+    height: 400px;
+  }
+  #Go {
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 767px;
+  }
+  #result {
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 767px;
+  }
+  #scoreBoard {
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 768px;
+  }
+  #result div:first-child {
+    padding-top: 60px;
+  }
+}

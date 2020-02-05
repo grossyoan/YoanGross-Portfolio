@@ -1,0 +1,99 @@
+body
+{
+    .global-container
+    {
+        .menu-flex
+        {
+            background-image: url('../assets/picture/bgMenu.svg');
+            transform: translateX(-105%);
+            background-size:cover;
+            display:none;
+            flex-direction: row;
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:2;
+            transition: all 0.6s ease-in-out;
+            .menu-slider
+            {
+                height:100vh;
+                width:calc(100vw/6);
+                transform:skew(10deg);
+                transition: all  0.1s ease-in-out;
+                background-repeat: no-repeat;
+                border-right: 2px solid black;
+                box-shadow: 0px 1px 1px 0px black;
+            }
+            // .menu-slider-1, .menu-slider-2, .menu-slider-3, .menu-slider-4, .menu-slider-5, .menu-slider-6
+            // {
+            //     transform: inherit;
+            // }
+            .menu-slider-1
+            {
+                background-image: url('../assets/picture/bgMenu1.svg');
+                background-size: 90vh;
+                background-position-y: 300px;
+                background-position-x: -100px;
+                &:hover
+                {
+                    background-position-x: -50px;
+                }
+            }
+            .menu-slider-2
+            {
+                background-image: url('../assets/picture/bgMenu2.svg');
+                background-size: 90vh;
+                background-position-y: 150px;
+                background-position-x: -400px;
+                &:hover
+                {
+                    background-position-x: -350px;
+                }
+            }
+            .menu-slider-3
+            {
+                background-image: url('../assets/picture/bgMenu3.svg');
+                background-size: 90vh;
+                background-position-y: 150px;
+                background-position-x: -260px;
+                &:hover
+                {
+                    background-position-x: -210px;
+                }
+            }
+            .menu-slider-4
+            {
+                background-image: url('../assets/picture/bgMenu4.svg');
+                background-size: 90vh;
+                background-position-y: 220px;
+                background-position-x: -300px;
+                &:hover
+                {
+                    background-position-x: -250px;
+                }
+            }
+            .menu-slider-5
+            {
+                background-image: url('../assets/picture/bgMenu5.svg');
+                background-size: 90vh;
+                background-position-y: 80px;
+                background-position-x: -450px;
+                &:hover
+                {
+                    background-position-x: -400px;
+                }
+            }
+            .menu-slider-6
+            {
+                background-image: url('../assets/picture/bgMenu6.svg');
+                background-size: 90vh;
+                background-position-y: 0px;
+                background-position-x: -300px;
+                &:hover
+                {
+                    background-position-x: -260px;
+                }
+            }
+        }
+    }
+} 

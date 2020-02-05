@@ -1,0 +1,256 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.selection {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+}
+
+.selectionBoxes {
+  width: 250px;
+  height: auto;
+  font-family: 'Open Sans', sans-serif;
+  border-top: 1px rgb(211, 213, 219) solid;
+}
+
+.ulSelect {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 0;
+}
+
+.liSelect {
+  display: block;
+  width: auto;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 2px 0px 2px 10px;
+}
+
+.unselected {
+  color: black;
+  background-color: white;
+}
+
+.selected {
+  background-color: #0f346c;
+  color: white;
+}
+
+.mainGaleries {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.galeriesImages {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.galerieContainer {
+  width: 275px;
+  height: 275px;
+  position: relative;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  visibility: visible;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/**/
+
+.image {
+  display: block;
+  width: auto;
+  height: 150%;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  height: 275px;
+  width: 275px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button {
+  border: 1px black solid;
+  padding: 3px 5px 3px 5px;
+  margin-top: 10px;
+  width: 75px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button:hover {
+  background-color: white;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.galerieContainer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  opacity: 1;
+  z-index: 51;
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+  user-select: none;
+}
+
+.modalText {
+  width: 300px;
+  padding: 10px;
+}
+
+.imgModalContainer {
+  width: 950px;
+  height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.modalImg {
+  height: 100%;
+}
+
+.closeButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButton span {
+  user-select: none;
+  cursor: pointer;
+}
+
+.modalContainer {
+  display: none;
+  width: 1250px;
+  height: 700px;
+  position: fixed;
+  z-index: 80;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 29px -1px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 0px 29px -1px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 0px 29px -1px rgba(0, 0, 0, 0.71);
+}
+
+.modal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width:1800px) {
+  .mainGaleries {
+    width: 70%;
+  }
+  .galeriesImages{
+    width: 100%;
+  }
+}
+@media (max-width:1650px) {
+  .mainGaleries {
+    width: 80%;
+  }
+  .galeriesImages{
+    width: 100%;
+  }
+}
+
+@media (max-width:950px) {
+  .modalContainer {
+    width: 740px;
+    height: auto;
+  }
+  .modal {
+    flex-direction: column;
+  }
+  .modalText {
+    width: 90%;
+  }
+  .imgModalContainer {
+    width: 740px;
+    height: 450px;
+  }
+
+}
+
+@media (max-width:750px) {
+ .galeriesImages{
+   width: 100%;
+ }
+  .mainGaleries {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding-left: 20px;
+  }
+  .modalContainer {
+    width: 340px;
+    height: auto;
+  }
+  .modal {
+    flex-direction: column;
+  }
+  .modalText {
+    width: 90%;
+  }
+  .imgModalContainer {
+    width: 340px;
+    height:300px;
+  }
+
+}
+@media (max-width:600px) {
+ .galeriesImages{
+   width: 300px;
+ }
+ .mainGaleries{
+   width: 300px;
+ }
+}

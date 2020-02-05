@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="A JS based game. Let's draw!" />
+  <title>Midl' !</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="logoGame">
+    <img src="images/logo.png" alt="Logo Midl'">
+  </div>
+  <div id="game">
+    <div id="gameSelection">
+      <div id="menuColor1">
+        <span class="gameSelectionText">Arcade</span>
+      </div>
+      <div id="menuColor2">
+        <span class="gameSelectionText">Relax</span>
+      </div>
+      <div id="arcade">
+        <canvas id="arcadeCanvas" width="600" height="495"></canvas>
+        <div id="myProgress">
+          <div id="myBar"></div>
+          <span>Done!</span>
+        </div>
+      </div>
+      <div id="settings">
+        <div id="settingsImg">
+          <img src="images/orangeCircle.png" id="orangeCircle" alt="Change the brush to orange">
+          <img src="images/greenCircle.png" id="greenCircle" alt="Change the brush to green">
+          <img src="images/blueCircle.png" id="blueCircle" alt="Change the brush to blue">
+          <img src="images/roseCircle.png" id="roseCircle" alt="Change the brush to rose">
+          <img src="images/redCircle.png" id="redCircle" alt="Change the brush to red">
+        </div>
+        <div id="brushSize">
+          <img src="images/blackCircle.png" id="Brush01" alt="Change the brush to big">
+          <img src="images/blackCircle.png" id="Brush02" alt="Change the brush to quite big">
+          <img src="images/blackCircle.png" id="Brush03" alt="Change the brush to medium">
+          <img src="images/blackCircle.png" id="Brush04" alt="Change the brush to little bigger">
+          <img src="images/blackCircle.png" id="Brush05" alt="Change the brush to skinny">
+        </div>
+        <img src="images/settings.png" id="settingsButton" alt="Access to the settings">
+      </div>
+      <img src="images/cup.png" id="cupButton" alt="Access to the scoreboard">
+    </div>
+  </div>
+  <div id="Go">
+    <span>Ready to Middle?</span>
+  </div>
+  <div id="scoreBoard">
+    <h2>LeaderBoard (SOON!)</h2>
+    <ul>
+    <li class="scoreboardLi"></li>
+    <li class="scoreboardLi"></li>
+    <li class="scoreboardLi"></li>
+    <li class="scoreboardLi"></li>
+    <li class="scoreboardLi"></li>
+  </ul>
+    <img src="images/home.png" id="homeButtonScoreboard" alt="Back to menu">
+  </div>
+  <footer>
+    <div id="socialMedias">
+      <img src="images/facebook.png"  id="facebook" alt="Facebook">
+      <img src="images/twitter.png"  id="twitter" alt="Twitter">
+      <img src="images/instagram.png" id="instagram" alt="Instagram">
+      <img src="images/youtube.png"  id="youtube" alt="Youtube">
+    </div>
+    <img src="images/companyLogo.png" id="companyLogo"  alt="Company Logo">
+  </footer>
+  <div id="result">
+    <div id="resultScore">Score en pourcent</div>
+    <div id="resultMessage">Message de réconfort</div>
+    <div id="resultImages">
+      <img src="images/retry.png" id="retryButton" alt="Restart the canvas">
+      <img src="images/home.png" id="homeButton" alt="Back to menu">
+      <img src="images/arrow.png" id="nextButton" alt="Next level">
+    </div>
+  </div>
+  <audio id="relaxMusic" loop>
+  <source src="sounds/relaxMusic.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="arcadeMusic">
+  <source src="sounds/arcadeSound.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="clickSound">
+  <source src="sounds/clickSound.mp3" type="audio/mpeg">
+  </audio>
+  <script src="scripts/jquery-3.3.1.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/canvas.js"></script>
+  <script src="scripts/canvasTools.js"></script>
+</body>
+</html>

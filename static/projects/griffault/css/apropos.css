@@ -1,0 +1,22 @@
+main{
+  width:60%;
+  margin: 0 auto;
+}
+.aproposImg{
+  float:left;
+  width:40%;
+}
+.biography{
+  width:55%;
+  float:right;
+}
+.biography img{
+  width:15%;
+}
+.biography h1{
+  margin:0 0 0 15%;
+  width:55%;
+}
+.biography div{
+  margin:5% 0 0 15%;
+}

@@ -1,0 +1,114 @@
+.global-container {
+    .sources-button {
+        position: fixed;
+        width:2.5%;
+        top:3%;
+        right:1.5%;
+        display:flex;
+        justify-content:flex-end;
+        z-index:2;
+        cursor:pointer;
+    }
+
+    .sound-button {
+        position: fixed;
+        width:2.5%;
+        top:3%;
+        right:4.5%;
+        display:flex;
+        justify-content: flex-end;
+        z-index:2;
+        transition: 0.3s ease-in-out;
+        cursor:pointer;
+    }
+
+    .title-1 {
+        position: relative;
+        width: 100%;
+        top: 8%;
+        left: 5%;
+        padding: 0;
+        color: white;
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        transition: 0.4s ease-in;
+    }
+    .menu-button {
+
+        position: fixed;
+        width:2.5%;
+        top:3%;
+        left:1.5%;
+        display:flex;
+        justify-content: flex-end;
+        z-index:3;
+        transition: 0.3s ease-in-out;
+        cursor:pointer;
+    }
+
+    .materials-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transition: 0.4s ease-in-out;
+        transform: scale(0);
+        opacity: 0;
+    
+        .template-picture-1 {
+            width: 65%;
+            height: 65%;
+            will-change: opacity transform;
+            transform: translateY(30%) translateX(-10%) scale(0.9);
+        }
+    
+        .explaination-1 {
+            will-change: transform;
+            width: 50%;
+            height: 75%;
+            transform: translateY(17.5%);
+            margin-right: 5%;
+            display: flex;
+            flex-direction: column;
+    
+            .number-1, .number-2 {
+                font-size: 2.5em;
+                font-family: 'WorkSans', Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            .date-title-1 {
+                text-align: start;
+                font-family: 'WorkSans', Arial, Helvetica, sans-serif;
+                font-size: 2.5em;
+                color: white;
+                margin-bottom: 15%;
+            }
+    
+            .text-1, .text-2 {
+                font-family: 'Raleway', Arial, Helvetica, sans-serif;
+                font-size: 1.5em;
+                line-height: 35px;
+                text-align: start;
+                color: white;
+            }
+            .text-1
+            {
+                margin-bottom: 5%;
+            }
+
+            .text-2 {
+                display: none;
+            }
+
+            .ct-chart-1 {
+                margin-top: 4%;
+            }
+            .comments {
+                color:white;
+                font-size: 1.2em;
+                font-family: 'Raleway', Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}
+
+

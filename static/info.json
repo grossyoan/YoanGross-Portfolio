@@ -115,7 +115,7 @@
     "media": "image",
     "url": "images/historyMachine.png",
     "alt": "History Machine project image",
-    "link": "https://www.grossyoan.fr/historymachine/"
+    "link": "projects/historymachine/"
   },
   {
     "type": "content-manager-dev",
@@ -137,7 +137,7 @@
     "media": "image",
     "url": "images/webgl.png",
     "alt": "Major Tom project image",
-    "link": "https://www.grossyoan.fr/webgl/"
+    "link": "projects/webgl/"
   },
   {
     "type": "content-manager-dev",
@@ -148,7 +148,7 @@
     "media": "image",
     "url": "images/zbarWars.png",
     "alt": "Z'Bar Wars project image",
-    "link": "https://www.grossyoan.fr/zbarwars/"
+    "link": "projects/zbarwars/"
   },
   {
     "type": "content-manager-dev",
@@ -159,7 +159,7 @@
     "media": "image",
     "url": "images/cubeInvaders.png",
     "alt": "Cube Invaders project image",
-    "link": "https://www.grossyoan.fr/cubeinvaders/"
+    "link": "projects/cubeinvaders/"
   },
   {
     "type": "content-manager-dev",
@@ -170,7 +170,7 @@
     "media": "image",
     "url": "images/scifiUi.png",
     "alt": "Sci-Fi UI project image",
-    "link": "https://www.grossyoan.fr/scifi-ui/"
+    "link": "projects/scifi-ui/"
   },
   {
     "type": "content-manager-dev",
@@ -181,7 +181,7 @@
     "media": "image",
     "url": "images/midl.png",
     "alt": "Midl project image",
-    "link": "https://www.grossyoan.fr/midl/"
+    "link": "projects/midl/"
   },
   {
     "type": "content-manager-3d",
@@ -367,7 +367,7 @@
     "media": "image",
     "url": "images/mockups/zbarwars/1.png",
     "alt": "Z'Bar Wars Mockup Image",
-    "link": "https://www.grossyoan.fr/zbarwars/",
+    "link": "projects/zbarwars/",
     "slider": [
       {
         "url": "images/mockups/zbarwars/1.png",

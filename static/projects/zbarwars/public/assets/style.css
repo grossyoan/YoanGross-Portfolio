@@ -1,0 +1,904 @@
+html, body {
+    overflow-x: hidden;
+}
+body{
+    padding:0;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 0;
+    position: relative;
+}
+*{
+    transition: opacity 0.3s ease-out; 
+    will-change: all;
+}
+.error{
+    width: 100vw;
+    height: 100vh;
+    z-index: 50000000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.alertPopup{
+    background: white;
+    color: #EDC02C;
+    padding: 10vh 5vw;
+    text-align: center;
+    border-radius: 5px;
+}
+.lottieAnimation{
+    background-color: #ebe3cd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5000000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+.lottieJson{
+    width:50%;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.logo{
+    position: absolute;
+    top: 4vh;
+    left: 5vw;
+    width: 15vw;
+    z-index: 1;
+}
+
+.loginImage{
+    position: absolute;
+    top: 4vh;
+    right: 5vw;
+    width: 15vw;
+    border-radius: 100%;
+    z-index: 2;
+}
+.loginAction{
+    opacity:0;
+    z-index: -99999;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.loginAction form{
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 3vh;
+}
+.connexionText{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 4vh;
+    margin-bottom: 0vh;
+}
+.signupAction{
+    opacity:0;
+    z-index: -99999;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.signupAction form{
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 3vh;
+}
+.input{
+    width: 60vw;
+    height: 4vh;
+    margin-left: 15vw;
+    background: #EDC02C;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1vh 0;
+    color:white;
+}
+.connexionFormText
+{
+    color: black;
+    margin-left: 15vw;
+    margin-bottom:0;
+}
+.submitter{
+    width: 30vw;
+    margin-left: 30vw;
+    padding: 1.5vh 2vw;
+    background: #EDC02C;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 3vh;
+    font-size: 1em;
+}
+.login{
+    opacity:0;
+    z-index: -99999;
+    position: absolute;
+    width: 90vw;
+    background-color: white;
+    color: antiquewhite;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    top: 18vh;
+    left: 5vw;
+    border-radius: 5px;
+}
+.welcomeText{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.closeButton{
+    width: 8vw;
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
+    z-index: 500000;
+}
+
+.finalCloseButton{
+    width: 8vw;
+    position: absolute;
+    right: 4vw;
+    top: 4vw;
+}
+.signupImage
+{
+    width: 40vw;
+}
+.signupButton
+{
+    padding: 2vh 0;
+    background: #EDC02C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+.loginButton
+{
+    font-size: 1em;
+    color: black;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 2vh;
+}
+.logForms{
+    margin-top: 15vh;
+}
+.downBar{
+    width: 100%;
+    background-color: white;
+    height: 10vh;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.searchBottomPanel{
+    width:90vw;
+    position: absolute;
+    left: 5vw;
+    bottom: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    align-items: center;
+    width: 70vw;
+}
+.searchInput{
+    height: 7vh;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 5vw;
+    font-size: 1em;
+    padding: 0;
+}
+.searchInput::placeholder
+{
+    color: #EDC02C;
+}
+.searchBottomPanel a{
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.geolocIcon{
+    width: 8vw;
+    background: white;
+    border-radius: 5px;
+    padding: 2vw;
+}
+.start{
+    height: 7vh;
+    color: white;
+    background: #EDC02C;
+    border: none;
+    padding: 0 5vw;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+}
+.downIcon{
+    width: 7vw;
+    margin-left: 12vw;
+    margin-right: 12vw
+}
+
+.logs{
+    opacity:0;
+    z-index: -99999;
+}
+
+.launcher{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 13vh;
+    opacity:0;
+    z-index: -99999;
+}
+.launch{
+    height: 8vh;
+    font-size: 1.2em;
+    width: 90vw;
+    background-color: white;
+    justify-content: center;
+    color: #EDC02C;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.launch p{
+    margin: 0;
+}
+.canceller{
+    height: 5vh;
+    font-size: 1em;
+    width: 90vw;
+    background-color: #C62727;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 0px 5px 5px;
+}
+.canceller p
+{
+    margin: 0;
+}
+.currentAdress{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    bottom: 20vh;
+    opacity: 0;
+    z-index: -99999;
+    background: #EDC02C;
+    color: white;
+    padding: 10px;
+    left: 10vw;
+    border-radius: 5px 5px 0px 0px;
+
+}
+.progressBar{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    z-index: -99999;
+    background: white;
+    align-items: center;
+}
+.progressBar .score
+{
+    align-items: flex-end;
+    display: flex;
+    width:15vw;
+}
+.ongoingBirzNumber{
+    margin-right: 1vw;
+}
+.progressBar .p
+{
+    margin-right: 1vw;
+}
+.progressBarInside
+{
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.stopButton{
+    height: 7vh;
+}
+.timer{
+    font-size: 1.5em;
+}
+.birzProgress
+{
+    height: 5vh;
+}
+
+.profilePage{
+    opacity: 0;
+    z-index: -99999;
+    position: absolute;
+    height: 45vh;
+    width: 76vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    top: 20vh;
+    left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+.profileData{
+    text-align: center;
+}
+.profileName{
+    color: #EDC02C;
+    font-size: 1.2em;
+    margin: 0;
+}
+.profileScore
+{
+    color: black;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0vw 5vh 0vw;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+.profileScore span{
+    margin-right: 1vw;
+    line-height: 1;
+}
+.birzProfile{
+    height: 3vh;
+    margin-right: 1vw;
+}
+.disconnectButton{
+    border-style: none;
+    background: none;
+    color: black;
+    font-size: 0.9em;
+}
+.deleteAccountButton{
+    color: #C62727;
+    font-size: 0.9em;
+}
+
+.downBarInfos{
+    opacity: 0;
+    z-index: -99999;
+    position: absolute;
+    height: 55vh;
+    width: 76vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    top: 15vh;
+    left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    align-items: center;
+}
+.leader{
+    display: flex;
+    width: 50vw;
+    justify-content: flex-start;
+    margin: 0 5vw;
+}
+.leaderList{
+    overflow: scroll;
+    overflow-y:scroll;
+    height: 35vh;
+    margin: 2vh;
+}
+.friendImage{
+    height: 9vh;
+    margin-right: 5vw;
+}
+.friendScore{
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 300;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.friendName{
+    margin: 0;
+    color: #EDC02C;
+    font-size: 1.3em;
+}
+.friendScoreDisplay{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 10vw;
+}
+.friendScoreDisplay p{
+    margin-right: 1vw;
+}
+.birzFriend{
+    height:2.5vh;
+}
+.friendListData{
+    width: 80%;
+}
+.friendContent{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+}
+.friendsContainer{
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 5vw;
+    overflow: scroll;
+    overflow-y:scroll;
+    height: 35vh;
+    margin: 2vh;
+}
+.friends{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.friendInfos{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.oneFriendContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+.oneFriendContainer img{
+    margin-top: auto;
+    width: 7vh;
+    height: 7vh;
+}
+.friendInfos p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.friendInfos .score{
+    font-size: 0.7em;
+    color: black;
+}
+.oneFriendContainer form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttonIMG{
+    width: 3vh;
+    height: 3vh;
+    border-style: none;
+    background: none;
+    background-image: url(../assets/images/cancel.svg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    font-size: 0; 
+
+}
+.endScreen{
+    opacity: 0;
+    z-index: -99999;
+    position: absolute;
+    height: 45vh;
+    width: 76vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    top: 20vh;
+    left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    align-items: center;
+    font-weight: 300;
+    justify-content: space-between;
+}
+.recapTotal{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    background: #EDC02C;
+    color: white;
+    width: 76vw;
+    justify-content: center;
+    padding: 2vh 0;
+    border-radius: 5px 5px 0px 0px;
+}
+.killAccount{
+    opacity: 0;
+    z-index: -99999;
+    position: absolute;
+    height: 40vh;
+    width: 76vw;
+    background-color: white;
+    top: 20vh;
+    left: 11vw;
+    border-radius: 5px;
+    color: #EDC02C;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.quitImg{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.quitText{
+    color: #EDC02C;
+    width: 50vw;
+    margin: 1vh auto;
+    text-align: center;
+}
+.quitValidation{
+    background: #C62727;
+    color: white;
+    padding: 2vh 0;
+    width: 76vw;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+
+}
+.datas{
+    opacity: 0;
+    margin-top: 4vh;
+    position: absolute;
+}
+.friendsTitle, .historyTitle, .leaderTitle
+{
+    text-align: center;
+    font-size: 2.2em;
+}
+.historyScore{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.historyScoreBlock{
+    width: 20vw;
+    display: flex;
+}
+.historyContainer{
+    display: flex;
+    width: 72vw;
+    justify-content: space-evenly;
+    height: 35vh;
+    overflow: scroll;
+}
+.historyLabel p{
+    margin: 0;
+}
+.historyLabel{
+    margin-bottom: 2vw;
+}
+.historyScore{
+    margin-bottom: 2vw;
+}
+.score{
+    margin-right: 2vw;
+}
+.addFriendButton{
+    background: #EDC02C;
+    color: white;
+    width: 30vw;
+    height: 3vh;
+    padding: 0.8vh 2vw;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.notificationButton{
+    width: 8vw;
+    right: 4vw;
+    top: 4vw;
+}
+.notificationImgBlock{
+    position: relative;
+}
+.notificationNumber{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%) translateY(-50%);
+    background: #EDC02C;
+    color: white;
+    width: 3vh;
+    height: 3vh;
+    text-align: center;
+    line-height: 2em;
+    font-size: 0.8em;
+    border-radius: 100%;
+}
+.friendContentFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+.addFriendData{
+    background-color: #fff;
+    width: 50vw;
+    height: 30vh;
+}
+.friendRequestData{
+    background-color: #fff;
+    height: 55vh;
+    width: 76vw;
+    top: 15vh;
+    left: 11vw;
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 0;
+    opacity: 0;
+    z-index: -9999;
+}
+.friendRequestData p{
+    margin: 0;
+    color: #EDC02C;
+    font-size: 1.3em;
+}
+.friendRequestData .input{
+    width: 100%;
+    margin-bottom: 1.1vh;
+    margin-left: 0;
+}
+.searchResult{
+    background-color: #fff;
+    height: 30vh;
+    width: 76vw;
+    border-radius: 5px;
+    position:absolute;
+    margin-top: 0;
+    opacity: 0;
+    z-index: -9999;
+}
+.addInput{
+    width: 100%;
+    height: 4vh;
+    background: #EDC02C;
+    border-style: none;
+    border-radius: 5px;
+    padding: 1vh 0;
+    color: white;
+    text-align: center;
+    margin-top:2vh;
+}
+.searchResult div{
+    width: 70%;
+    margin: auto;
+    margin-top: 4vh;
+}
+.searchResult p{
+    width: 20%;
+    margin: auto;
+}
+.searchResult h1{
+    width: 30%;
+    font-size: 1.5em;
+    margin: auto;
+    margin-top: 4vh;
+}
+.requestResult{
+    width: 50%;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.requestResult form{
+    width: 100%;
+}
+.search{
+    width: 100%;
+    height: 4vh;
+    margin-bottom: 2vh;
+    margin-left: 0px;
+    padding: 1vh 1vh;
+}
+.addFriendData button{
+    padding: 1vh 1.5vw;
+    display: block;
+    background: #EDC02C;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: white;
+    margin: auto;
+}
+.addFriendData p{
+    margin: 0;
+    margin-bottom: 1vh;
+    font-size: 0.8em;
+    color: black;
+}
+.map {
+    width: 100vw;
+    height: 94vh;
+}
+
+.card{
+    height: 13vh;
+    position: fixed;
+    top: 25%;
+    left: 30vw;
+    z-index: 1;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px #00000055;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    padding: 0 5vw;
+}
+
+.card .name{
+    color: #EDC02C;
+    font-size: 1.1em;
+    margin-bottom: 0.5vh;
+}
+
+.card .address{
+    font-size: 0.8em;
+    margin-bottom: 1vh;
+}
+
+.card .validate{
+    bottom: 0;
+    background: #EDC02C;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1vh 5vw;
+}
+.visible{
+    opacity:1;
+    z-index: 99999;
+}
+
+.visibleImportant{
+    opacity:1;
+    z-index: 99999;
+}
+
+a{
+    text-decoration: none;
+}
+
+.recapInfos{
+    margin: 5vw;
+    color: black;
+
+}
+
+.applyFinishBarathon{
+    width: 100%;
+    padding: 2vh 0;
+    text-align: center;
+    background-color: #ecbf2b;
+    border-radius: 0px 0px 5px 5px;
+}
+.endedBarathonValidateText{
+    color: white;
+    font-size: 1em;
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.endScreenData{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 45vh;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.invitationTitle{
+    text-align: center;
+    font-size: 1.8em;
+    color: #ecbf2b;
+    margin-top: 8vh;
+}
+
+.rotationDisclaimer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    color: #ecbf2b;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index:999999;
+    display:none;
+}
