@@ -147,8 +147,7 @@
     "description": "A pub crawl website for mobile made for an school project focused on APIs and PHP. It cost us some sleepless nights, but it was a really fun and challenging project! Cheers!",
     "media": "image",
     "url": "images/zbarWars.png",
-    "alt": "Z'Bar Wars project image",
-    "link": "projects/zbarwars/"
+    "alt": "Z'Bar Wars project image"
   },
   {
     "type": "content-manager-dev",
@@ -367,7 +366,6 @@
     "media": "image",
     "url": "images/mockups/zbarwars/1.png",
     "alt": "Z'Bar Wars Mockup Image",
-    "link": "projects/zbarwars/",
     "slider": [
       {
         "url": "images/mockups/zbarwars/1.png",
