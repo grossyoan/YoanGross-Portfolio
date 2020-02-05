@@ -1,0 +1,113 @@
+-- MySQL dump 10.13  Distrib 5.5.62, for debian-linux-gnu (x86_64)
+--
+-- Host: 172.17.0.8    Database: grossyoapjzbwars
+-- ------------------------------------------------------
+-- Server version	5.6.46-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `events`
+--
+
+DROP TABLE IF EXISTS `events`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(65) NOT NULL,
+  `score` int(11) NOT NULL,
+  `date` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `events`
+--
+
+LOCK TABLES `events` WRITE;
+/*!40000 ALTER TABLE `events` DISABLE KEYS */;
+INSERT INTO `events` VALUES (9,'lucie',2000,'2012-04-19'),(10,'lucie',2000,'2012-04-19'),(11,'lucie',2000,'2012-04-19'),(12,'lucie',2000,'2012-04-19'),(13,'lucie',2000,'2012-04-19'),(14,'lucie',2000,'2012-04-19'),(15,'lucie',2000,'2012-04-19'),(16,'Yoannn',0,'2012-04-19'),(17,'Yoannn',625,'2012-04-19'),(18,'Yoannn',625,'2012-04-19'),(19,'Yoannn',625,'2012-04-19'),(20,'Yoannn',2000,'2012-04-19'),(21,'Yoannn',572,'2012-04-19'),(22,'lucie',334,'2012-04-19'),(23,'Yoann',0,'2012-04-19'),(24,'Yoannn',572,'2012-04-19'),(25,'Yoannn',0,'2012-04-19'),(26,'lucie',1685,'2012-04-19'),(27,'Yoann',0,'2012-04-19'),(28,'Yoann',0,'2012-04-19'),(29,'lucie',1685,'2012-04-19'),(30,'lucie',1685,'2012-04-19'),(31,'quentin',1000,'2012-04-19'),(32,'lucas',858,'2012-04-19'),(33,'Yoann',1050,'2012-04-19'),(34,'bruno',948,'2012-04-19'),(35,'bruno',0,'2012-04-19'),(36,'quentin',445,'2012-04-19'),(37,'bruno',0,'2012-04-19'),(38,'quentin',445,'2012-04-19'),(39,'quentin',445,'2012-04-19'),(40,'Lucas',0,'2012-04-19'),(41,'testtest',0,'2012-04-19'),(42,'Lucie',0,'2012-04-19'),(43,'Huggy',1910,'2012-04-19'),(44,'Huggy',667,'2012-04-19'),(45,'Huggy',1077,'2012-04-19'),(46,'EraFx',1929,'2012-04-19'),(47,'EraFx',1929,'2012-04-19'),(48,'EraFx',1929,'2012-04-19'),(49,'EraFx',1929,'2012-04-19'),(50,'juju',375,'2012-04-19'),(51,'juju',375,'2012-04-19'),(52,'juju',375,'2012-04-19'),(53,'quentin',3250,'2012-04-19'),(54,'francis',2572,'2012-04-19'),(55,'francis',1000,'2012-04-19'),(56,'francis',2143,'2012-04-19'),(57,'francis',2143,'2012-04-19'),(58,'francis',1334,'2012-04-19'),(59,'Stash',2910,'2012-04-19'),(60,'Stash',2910,'2012-04-19'),(61,'Stash',2910,'2012-04-19'),(62,'Stash',2910,'2012-04-19'),(63,'Scapgot',438,'2012-04-19'),(64,'Scapgot',438,'2012-04-19'),(65,'Scapgot',438,'2012-04-19'),(66,'lucie',0,'2013-04-19'),(67,'lucie',0,'2013-04-19'),(68,'grossemaarde',0,'2013-04-19'),(69,'Lucie',1143,'2015-04-19'),(70,'Yoan',1143,'2016-04-19'),(71,'Lucassss',1455,'2018-04-19'),(72,'Lucassss',1455,'2018-04-19'),(73,'xaviercharlo',2000,'2018-04-19'),(74,'xaviercharlo',2000,'2018-04-19'),(75,'xaviercharlo',2000,'2018-04-19'),(76,'Toto',1173,'2019-04-19'),(77,'Yoan',1173,'2020-04-19'),(78,'Yoan',0,'2020-04-19'),(79,'Yoan',2770,'2020-04-19'),(80,'Yoan',1500,'2021-04-19'),(81,'Lucassss',3667,'2002-05-19'),(82,'Lucassss',3667,'2002-05-19'),(83,'Tristan',2770,'2008-05-19'),(84,'guillaume',353,'2010-05-19'),(85,'guillaume',353,'2010-05-19'),(86,'guillaume',353,'2010-05-19'),(87,'guillaume',371,'2010-05-19'),(88,'Tristan',1200,'2016-05-19'),(89,'lalouvez',0,'2018-05-19'),(90,'Cyril',286,'2022-05-19'),(91,'Tristan',250,'2008-06-19'),(92,'arthur',6000,'2010-07-19'),(93,'Quaelor',0,'2003-09-19'),(94,'zrklnbernk',20744,'2015-10-19'),(95,'pute',29334,'2015-10-19'),(96,'Lexie',1200,'2015-10-19'),(97,'grosse teub',2077,'2015-10-19'),(98,'grosse teub',2077,'2015-10-19'),(99,'surkesh',1929,'2011-12-19'),(100,'surkesh',1929,'2011-12-19'),(101,'theo',4000,'2027-01-20'),(102,'yoannnnnn',2250,'2029-01-20'),(103,'yoannnnnn',2250,'2029-01-20'),(104,'yoannnnnn',2250,'2029-01-20'),(105,'yoannnnnn',2400,'2029-01-20');
+/*!40000 ALTER TABLE `events` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `friends`
+--
+
+DROP TABLE IF EXISTS `friends`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `friends` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username_1` varchar(50) NOT NULL,
+  `username_2` varchar(50) NOT NULL,
+  `is_pending` tinyint(2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `friends`
+--
+
+LOCK TABLES `friends` WRITE;
+/*!40000 ALTER TABLE `friends` DISABLE KEYS */;
+INSERT INTO `friends` VALUES (39,'juju','quentin',0),(43,'lgdr','guillaume',0),(33,'quentin','Yoann',0),(42,'xaviercharlo','quentin',1),(41,'Scapgot','quentin',1),(44,'yoannnnnn','Yoan',1);
+/*!40000 ALTER TABLE `friends` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `score` int(200) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=81 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (41,'Huggy','b2a5abfeef9e36964281a31e17b57c97',3656),(15,'cyrille','8dd01288dd803f549e0c89b78ab743be',12),(37,'testtest','0cc175b9c0f1b6a831c399e269772661',0),(51,'Yoan','c4ca4238a0b923820dcc509a6f75849b',6588),(40,'Rom1','81dc9bdb52d04dc20036dbd8313ed055',0),(36,'quentin','0cc175b9c0f1b6a831c399e269772661',5588),(35,'Yoann','c4ca4238a0b923820dcc509a6f75849b',1050),(38,'burno','ab4f63f9ac65152575886860dde480a1',0),(39,'bruno','ab4f63f9ac65152575886860dde480a1',948),(42,'EraFx','c4ca4238a0b923820dcc509a6f75849b',7720),(43,'juju','0cc175b9c0f1b6a831c399e269772661',1128),(44,'francis','202cb962ac59075b964b07152d234b70',9194),(45,'Quebtin','13085a63a2b3e4beb7ab10ee395aefe4',0),(47,'Scapgot','0cc175b9c0f1b6a831c399e269772661',1314),(48,'Lucas','c11239dbd8ba7fc29d29523001ac8889',0),(49,'antoine','f02368945726d5fc2a14eb576f7276c0',0),(50,'grossemaarde','14204e691b80b82bb44ece9670f767aa',0),(52,'antodld','ab19aae055f152ccc0eea61656276c64',0),(53,'Lucassss','698d51a19d8a121ce581499d7b701668',10248),(54,'xaviercharlo','81dc9bdb52d04dc20036dbd8313ed055',6000),(55,'Toto','998db284485ec6c227f8dc34086128e1',1174),(56,'Shawnuke','ab6c040066603ef2519d512b21dce9ab',0),(57,'Clara','68053af2923e00204c3ca7c6a3150cf7',0),(58,'Tristan','81dc9bdb52d04dc20036dbd8313ed055',4220),(59,'lgdr','0e5091a25295e44fea9957638527301f',0),(60,'guillaume','c2b17b8cb332d071d4ac81167b2a6219',1434),(61,'Arsene','6ecc0500d10ea0a41cba814ce259ef75',0),(62,'lalouvez','7c8aee1a9dd24181bcba5250a0d89f86',0),(63,'Cyril','827ccb0eea8a706c4c34a16891f84e7b',286),(64,'Yo','3700f097e741a7702f7e4ac61ed88c1a',0),(65,'Duieuxhfy','74b87337454200d4d33f80c4663dc5e5',0),(66,'ArsÃ¨ne','71b3b26aaa319e0cdf6fdb8429c112b0',0),(67,'arthur','81dc9bdb52d04dc20036dbd8313ed055',6000),(68,'Quaelor','a4635d72d299f9406f62221574dda2fd',0),(72,'Lexie','81dc9bdb52d04dc20036dbd8313ed055',1200),(71,'yop222','a4635d72d299f9406f62221574dda2fd',0),(73,'grosse teub','c4ca4238a0b923820dcc509a6f75849b',4156),(74,'test','098f6bcd4621d373cade4e832627b4f6',0),(75,'Jup','81dc9bdb52d04dc20036dbd8313ed055',0),(76,'surkesh','e693e8c1aee6193f0da43e67ab6f4585',3860),(77,'yoan123','89a81c862e84531a031ab4c8c1988a6a',0),(78,'H','2510c39011c5be704182423e3a695e91',0),(79,'theo','ed735d55415bee976b771989be8f7005',4000),(80,'yoannnnnn','202cb962ac59075b964b07152d234b70',9150);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping events for database 'grossyoapjzbwars'
+--
+
+--
+-- Dumping routines for database 'grossyoapjzbwars'
+--
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-02-04 20:57:07
