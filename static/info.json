@@ -81,8 +81,8 @@
     "number": 0,
     "title": "Tchoutchou - The Game",
     "date": "January 2020",
-    "description": "A mobile game made within 5 days, from thinking to assets production and Kotlin development. Case study coming soon!",
-    "link": "apks/tchoutchou.apk",
+    "description": "A mobile game made within 5 days, from thinking to assets production and Kotlin development. Case study available!",
+    "link": "https://www.behance.net/gallery/90856187/Tchoutchou-a-one-week-game-challenge",
     "slider": [
       {
         "url": "images/mockups/tchoutchou/1.png",
@@ -196,12 +196,13 @@
   {
     "type": "content-manager-3d",
     "number": 1,
-    "title": "Kila - Promotional Video",
+    "title": "Kila - Orange 5G Contest - Finalists",
     "date": "December 2019",
-    "description": "A promotional video made for a school project around sport and 5G, with Orange.",
+    "description": "A promotional video made for a project created as part of the Orange Young Talent Contest.",
     "media": "video",
     "url": "videos/3DKila.m4v",
-    "alt": false
+    "alt": false,
+    "link": "https://www.youtube.com/watch?v=0EiTol1-Sio&feature=youtu.be"
   },
   {
     "type": "content-manager-3d",
