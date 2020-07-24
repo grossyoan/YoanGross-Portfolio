@@ -175,15 +175,14 @@ video
 
 .link-container
     position absolute
-    bottom 30px
+    bottom 5%
     left 50%
     transform: translate(-50%, 40%);
-    width 60%
-    height 10%
+    width 80%
     display flex
     justify-content space-around
     align-items center
-    flex-flow row nowrap
+    flex-flow row wrap
     z-index 2000
     overflow hidden
     opacity 0.5
@@ -201,6 +200,7 @@ video
     color black
     font-family: 'Roboto Mono', monospace;
     opacity 0.6
+    margin 0 2%
     transition 0.5s ease all
 .link:hover  
     opacity 1 
@@ -769,8 +769,8 @@ video
     .big-nb
         left -2%
     .link-container 
-        bottom 20px
-        width 80%
+        bottom 40px
+        // width 80%
     .responsive-msg
         animation blink 2s linear 0s infinite normal forwards 
     .responsive-msg-cursor
@@ -789,7 +789,8 @@ video
     .content-container
         top 40%
     .link-container 
-        height 8%
+        bottom 40px
+    //     height 8%
     video 
         height 290px
 
@@ -824,7 +825,7 @@ video
     .link-container 
         bottom 40px
         width 100%
-        height 20px
+        // height 20px
     .link
         font-size 0.7em
     .modal-video 
