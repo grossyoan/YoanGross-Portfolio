@@ -4,7 +4,7 @@
     "number": 0,
     "title": "Hello Dribbble - Synerg'hetic",
     "date": "July 2019",
-    "description": "An Hello Dribbble animation with the new graphic charter of Synerg'hetic.",
+    "description": "An Hello Dribbble animation made with love following the rebrand of the Junior-Enterprise.",
     "media": "video",
     "url": "videos/SynergHello.m4v",
     "alt": false,
@@ -13,6 +13,17 @@
   {
     "type": "content-manager-motion",
     "number": 1,
+    "title": "Best wishes for 2021!",
+    "date": "December 2020",
+    "description": "What could be better than a puppet show staring a sick Santa to wish you an happy new year?",
+    "media": "video",
+    "url": "videos/MotionGreetings.m4v",
+    "alt": false,
+    "link": "https://www.instagram.com/p/CJN_8CLoV5-/"
+  },
+  {
+    "type": "content-manager-motion",
+    "number": 2,
     "title": "Recrutment Campaign - Synerg'hetic",
     "date": "January 2019",
     "description": "One of the three motion videos made for the recruitment campaign of Synerg'hetic, a Junior-Enterprise.",
@@ -23,7 +34,18 @@
   },
   {
     "type": "content-manager-motion",
-    "number": 2,
+    "number": 3,
+    "title": "Hello Dribbble",
+    "date": "January 2019",
+    "description": "An Hello Dribbble animation made for a friend.",
+    "media": "video",
+    "url": "videos/Dribbblealex.m4v",
+    "alt": false,
+    "link": "https://dribbble.com/shots/5960859-Hello-Dribbble"
+  },
+  {
+    "type": "content-manager-motion",
+    "number": 4,
     "title": "Showreel - Experiments",
     "date": "October 2019",
     "description": "A showreel made from various experiments with After Effects and 3ds Max.",
@@ -34,7 +56,7 @@
   },
   {
     "type": "content-manager-motion",
-    "number": 3,
+    "number": 5,
     "title": "Aftermovie - Synerg'hetic",
     "date": "March 2019",
     "description": "One of the multiple aftermovies made for Synerg'hetic, as they frequently organize talks with influent professionals from the tech industry.",
@@ -45,7 +67,7 @@
   },
   {
     "type": "content-manager-motion",
-    "number": 4,
+    "number": 6,
     "title": "Transports Solid'ères - Landing Animation",
     "date": "June 2019",
     "description": "A short animation made for the landing page of a school project called Transports Solid'ères.",
@@ -53,28 +75,6 @@
     "url": "videos/MotionTransports.m4v",
     "alt": false,
     "link": "https://dribbble.com/shots/6679894-Isometric-City-Animations"
-  },
-  {
-    "type": "content-manager-motion",
-    "number": 5,
-    "title": "Brand's Logo Animation - Synerg'hetic",
-    "date": "January 2019",
-    "description": "The animated Synerg'hetic logo following the rebrand of the Junior-Enterprise.",
-    "media": "video",
-    "url": "videos/SynergLogo.m4v",
-    "alt": false,
-    "link": false
-  },
-  {
-    "type": "content-manager-motion",
-    "number": 6,
-    "title": "Hello Dribbble",
-    "date": "January 2019",
-    "description": "An Hello Dribbble animation made for a friend.",
-    "media": "video",
-    "url": "videos/DribbbleAlex.m4v",
-    "alt": false,
-    "link": "https://dribbble.com/shots/5960859-Hello-Dribbble"
   },
   {
     "type": "content-manager-dev",
@@ -109,13 +109,13 @@
   {
     "type": "content-manager-dev",
     "number": 1,
-    "title": "The History Machine - Webdoc",
-    "date": "December 2018",
-    "description": "A web documentary developed in 2 days for an intensive week project, questioning the human/machine relationship's evolution since their creation.",
+    "title": "1 day Game Jam",
+    "date": "January 2021",
+    "description": "A cylindrical endless runner made in 6h for a Unity Game Jam. Pretty addictive, give it a try!",
     "media": "image",
-    "url": "images/historyMachine.png",
-    "alt": "History Machine project image",
-    "link": "projects/historymachine/"
+    "url": "images/endlessrunner.png",
+    "alt": "Unity game jam project image",
+    "link": "projects/endlessrunner"
   },
   {
     "type": "content-manager-dev",
@@ -131,6 +131,18 @@
   {
     "type": "content-manager-dev",
     "number": 3,
+    "title": "The History Machine - Webdoc",
+    "date": "December 2018",
+    "description": "A web documentary developed in 2 days for an intensive week project, questioning the human/machine relationship's evolution since their creation.",
+    "media": "image",
+    "url": "images/historyMachine.png",
+    "alt": "History Machine project image",
+    "link": "projects/historymachine/"
+  },
+
+  {
+    "type": "content-manager-dev",
+    "number": 4,
     "title": "Major Tom - WebGL Experience",
     "date": "January 2019",
     "description": "A WebGL experience made during a weekend, using imported models, Three.JS and Physi.JS for collisions. The collisions are neither good or bad, at least they're working! Still love the result, considering the time I had.",
@@ -141,7 +153,7 @@
   },
   {
     "type": "content-manager-dev",
-    "number": 4,
+    "number": 5,
     "title": "Z'Bar Wars - Pub Crawl",
     "date": "April 2019",
     "description": "A pub crawl website for mobile made for an school project focused on APIs and PHP. It cost us some sleepless nights, but it was a really fun and challenging project! Cheers!",
@@ -151,7 +163,7 @@
   },
   {
     "type": "content-manager-dev",
-    "number": 5,
+    "number": 6,
     "title": "Cube Invaders - Canvas Experience",
     "date": "November 2018",
     "description": "A game made in a week using Javascript and Canvas for a development course. Random ennemies position, size and movement, random colors, collision detection, the game has cool features.",
@@ -162,7 +174,7 @@
   },
   {
     "type": "content-manager-dev",
-    "number": 6,
+    "number": 7,
     "title": "Sci-Fi UI",
     "date": "October 2018",
     "description": "A fake Sci-Fi control panel made for a development course, using CSS animations.",
@@ -173,7 +185,7 @@
   },
   {
     "type": "content-manager-dev",
-    "number": 7,
+    "number": 8,
     "title": "Midl - JS Casual Game",
     "date": "April 2018",
     "description": "A game made during an intensive week of my first year at Hetic. It was the first time I used Javascript for a project.",
@@ -185,13 +197,13 @@
   {
     "type": "content-manager-3d",
     "number": 0,
-    "title": "Bouncing Balls",
-    "date": "December 2019",
-    "description": "Some experiment with xPresso and generative animation on Cinema4D.",
-    "media": "video",
-    "url": "videos/3DBalls.m4v",
-    "alt": false,
-    "link": "https://www.instagram.com/p/B52cQLEo5-5/"
+    "title": "Samuel Belolo Portfolio",
+    "date": "Ongoing",
+    "description": "I'm working on a friend portfolio with the goal to create an immersive experience using WebGL and a lot of cool interactions and animations. Stay tuned!",
+    "media": "image",
+    "url": "images/portfoliosamuel.png",
+    "alt": "3D rendering for Samuel Belolo's portfolio",
+    "link": "https://www.instagram.com/p/B_-j72KgXFm/"
   },
   {
     "type": "content-manager-3d",
@@ -207,6 +219,17 @@
   {
     "type": "content-manager-3d",
     "number": 2,
+    "title": "Design Fiction Low Poly Concept",
+    "date": "October 2020",
+    "description": "While working on a design fiction project, I had the opportunity to create a colorful low poly city.",
+    "media": "image",
+    "url": "images/designfiction.png",
+    "alt": "3D renders of a low poly city",
+    "link": "https://www.instagram.com/p/CGzqHpHgTox/"
+  },
+  {
+    "type": "content-manager-3d",
+    "number": 3,
     "title": "Police Roadblock",
     "date": "September 2019",
     "description": "A night animation modeled and animated for an error page during my internship at Trusk.",
@@ -217,18 +240,18 @@
   },
   {
     "type": "content-manager-3d",
-    "number": 3,
-    "title": "Fluid Pipe",
+    "number": 4,
+    "title": "Bouncing Balls",
     "date": "December 2019",
-    "description": "An experiment made with Blender and Flip Fluids as a first try with fluids simulation.",
+    "description": "Some experiment with xPresso and generative animation on Cinema4D.",
     "media": "video",
-    "url": "videos/3DPipe.m4v",
+    "url": "videos/3DBalls.m4v",
     "alt": false,
-    "link": "https://dribbble.com/shots/9163516-Pipe-Water-Simulation"
+    "link": "https://www.instagram.com/p/B52cQLEo5-5/"
   },
   {
     "type": "content-manager-3d",
-    "number": 4,
+    "number": 5,
     "title": "Gas Station",
     "date": "October 2019",
     "description": "A low poly 3D animation made as a Blender training.",
@@ -239,7 +262,7 @@
   },
   {
     "type": "content-manager-3d",
-    "number": 5,
+    "number": 6,
     "title": "Truck Tunnel",
     "date": "September 2019",
     "description": "Another animation modeled and animated for an error page during my internship at Trusk.",
@@ -250,7 +273,7 @@
   },
   {
     "type": "content-manager-3d",
-    "number": 6,
+    "number": 7,
     "title": "Truck Garage",
     "date": "September 2019",
     "description": "Another animation modeled and animated for an error page during my internship at Trusk.",
@@ -258,17 +281,6 @@
     "url": "videos/3DGarage.m4v",
     "alt": false,
     "link": "https://dribbble.com/shots/7336126-Truck-Garage-Animation"
-  },
-  {
-    "type": "content-manager-3d",
-    "number": 7,
-    "title": "Hello Dribbble",
-    "date": "March 2019",
-    "description": "A low poly 3D animation made for my Hello Dribbble shot using Cinema4D.",
-    "media": "video",
-    "url": "videos/3DHelloDribbble.m4v",
-    "alt": false,
-    "link": "https://dribbble.com/shots/6119617-Hello-Dribbble"
   },
   {
     "type": "content-manager-3d",
@@ -284,17 +296,29 @@
   {
     "type": "content-manager-3d",
     "number": 9,
-    "title": "Cartier Champs-Élysées",
-    "date": "April 2018",
-    "description": "A 3D animation of the Cartier showroom located in the Champs-Élysées, created for a communication course.",
+    "title": "Hello Dribbble",
+    "date": "March 2019",
+    "description": "A low poly 3D animation made for my Hello Dribbble shot using Cinema4D.",
     "media": "video",
-    "url": "videos/3DCartier.m4v",
+    "url": "videos/3DHelloDribbble.m4v",
     "alt": false,
-    "link": false
+    "link": "https://dribbble.com/shots/6119617-Hello-Dribbble"
   },
+
   {
     "type": "content-manager-design",
     "number": 0,
+    "title": "A SAAS platform for schools",
+    "date": "January 2021",
+    "description": "Éducobu is a SAAS tool that provides students and teachers with a unique space for communication, collaboration and distance learning. It was made for a design course, and you can check out the prototype!",
+    "media": "image",
+    "url": "images/mockups/educobu.png",
+    "alt": "Educobu Mockup Image",
+    "link": "https://www.figma.com/proto/vLqKT6fMXSOV9UqjaeQFRO/Design-Brief?node-id=486%3A1984&viewport=398%2C552%2C0.09106877446174622&scaling=min-zoom"
+  },
+  {
+    "type": "content-manager-design",
+    "number": 1,
     "title": "Airbnb Weekends",
     "date": "June 2019",
     "description": "A complete flow for an all-in-one weekend booking app made for a design course.",
@@ -331,7 +355,7 @@
   },
   {
     "type": "content-manager-design",
-    "number": 1,
+    "number": 2,
     "title": "Petters - Animal Dating App",
     "date": "June 2019",
     "description": "The mockups of an Android Tinder-Like app for animals, that we've then developed using Kotlin.",
@@ -360,7 +384,7 @@
   },
   {
     "type": "content-manager-design",
-    "number": 2,
+    "number": 3,
     "title": "Z'Bar Wars - Pub Crawl",
     "date": "April 2019",
     "description": "The mockups of a pub crawl website for mobile made for a school project. It was rush but also a lot of fun!",
